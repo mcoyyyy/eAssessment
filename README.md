@@ -49,3 +49,4 @@ sudo -u www-data php tao/scripts/taoInstall.php \
 |                  | --instance_name\|-n | The name of the instance to install. |
 |                  | --extensions\|-e    | Comma-separated list of extensions to install. |
 |                  | --verbose\|-v       | Verbose mode. |
+
