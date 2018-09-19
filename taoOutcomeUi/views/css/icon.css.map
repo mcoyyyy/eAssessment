@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "icon.css",
+	"sources": [
+		"../scss/icon.scss",
+		"../../../tao/views/scss/inc/_bootstrap.scss",
+		"../../../tao/views/scss/inc/_variables.scss",
+		"../../../tao/views/scss/inc/_functions.scss",
+		"../../../tao/views/scss/inc/_colors.scss",
+		"../../../tao/views/scss/inc/fonts/_tao-icon-vars.scss"
+	],
+	"names": [],
+	"mappings": "AAEA,AAAA,UAAU,AAAA,OAAO,AAAC,CKmBhB,WAAW,CAAE,gBAAgB,CAC7B,KAAK,CAAE,IAAI,CACX,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,MAAM,CACnB,YAAY,CAAE,MAAM,CACpB,cAAc,CAAE,IAAI,CACpB,WAAW,CAAE,CAAC,CAGd,sBAAsB,CAAE,WAAW,CACnC,uBAAuB,CAAE,SAAS,CAgEb,OAAO,CAAE,OAAO,CL1FtC,AACD,AAAA,YAAY,AAAA,OAAO,AAAC,CKelB,WAAW,CAAE,gBAAgB,CAC7B,KAAK,CAAE,IAAI,CACX,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,MAAM,CACnB,YAAY,CAAE,MAAM,CACpB,cAAc,CAAE,IAAI,CACpB,WAAW,CAAE,CAAC,CAGd,sBAAsB,CAAE,WAAW,CACnC,uBAAuB,CAAE,SAAS,CAuClB,OAAO,CAAE,OAAO,CL7DjC"
+}

@@ -1,0 +1,141 @@
+<project name="build tao" default="help">
+
+	<property name="branch" value="test/master-phpunit" />
+	<property name="extension" value="oat-sa/tao-core" />
+
+	<tstamp>
+		<format property="TSTAMP" pattern="%Y%m%d_%H%M%S" />
+	</tstamp>
+	<property environment="env" />
+
+	<property name="package.name" value="${env.BUILD_TAG}_${TSTAMP}" />
+	<echo msg="${package.name}" />
+	<property name="extension_branch" value="${env.ghprbSourceBranch}" />
+	
+	<echo msg="${env.ghprbPullId}" />
+	<property name="new.deployment.name" value="tao-core-PR${env.ghprbPullId}" />
+
+	<resolvepath propertyName="build.dir.resolved" file="${env.WORKSPACE}" />
+	<echo msg="${build.dir.resolved}" />
+
+	<target name="help">
+		<echo msg="Available Command : " />
+		<exec executable="vendor/bin/phing" passthru="true">
+			<arg value="-l" />
+		</exec>
+	</target>
+
+
+	<target name="clean">
+
+		<delete dir="${build.dir.resolved}/build" />
+		<mkdir dir="${build.dir.resolved}/build" />
+
+	</target>
+
+
+	
+	<target name="clone" description="clone deployer package">
+		<gitclone repository="git@github.com:oat-sa/deploy-test-package.git" targetPath="${build.dir.resolved}/package" />
+		<resolvepath propertyName="package.dir.resolved" file="${build.dir.resolved}/package" />
+
+		<if>
+			<equals arg1="${branch}" arg2="master" />
+			<then>
+				<echo level="info" msg="Already on master" />
+			</then>
+			<else>
+				<echo level="info" msg="Fetch ${branch} " />
+				<gitfetch repository="${package.dir.resolved}" source="origin" refspec="${branch}:${branch}" />
+				<gitcheckout repository="${package.dir.resolved}" branchname="${branch}" />
+			</else>
+		</if>
+
+		<composer command="update" composer="/usr/local/bin/composer">
+			<arg value="--no-interaction" />
+			<arg value="--no-scripts" />
+			<arg value="--no-progress" />
+			<arg value="--working-dir" />
+			<arg path="${package.dir.resolved}" />
+
+		</composer>
+		
+			
+		<exec command="pwd" logoutput="true" passthru="true" />
+		<exec command="ls" logoutput="true" passthru="true"/>
+		<echo msg="bash ./replace.sh ${build.dir.resolved}/package/composer.json ${extension} ${extension_branch}" />
+		<exec command="bash ./replace.sh ${build.dir.resolved}/package/composer.json ${extension} ${extension_branch}" logoutput="true" passthru="true"/>
+
+
+		<composer command="update" composer="/usr/local/bin/composer">
+
+			<arg value="--no-interaction" />
+			<arg value="--no-scripts" />
+			<arg value="--no-progress" />
+			<arg value="--working-dir" />
+			<arg path="${package.dir.resolved}" />
+			<arg value="${extension}" />
+		</composer>
+	</target>
+	
+	
+	<target name="create_new_deployment" description="Create new deployment">
+		<if>
+			<isset property="new.deployment.name" />
+			<then>
+
+		
+				<exec command='sed -i "s*testDeploy*${new.deployment.name}*g" build.properties' dir="${build.dir.resolved}/package" />
+				<exec command='sed -i "s*package.folder=${new.deployment.name}*package.folder=taocorePR${env.ghprbPullId}*g" build.properties' dir="${build.dir.resolved}/package" />
+				<exec command='sed -i "s*package*${new.deployment.name}*g" db.properties' dir="${build.dir.resolved}/package" />
+
+				
+			</then>
+			<else>
+				<echo level="error" msg="new.deployment.name not set" />
+			</else>
+		</if>
+	</target>
+	
+
+	<target name="Generate_package" description="Emulate output form continuesphp service" depends="clean">
+
+
+		<resolvepath propertyName="package.dir.resolved" file="${build.dir.resolved}/package" />
+		<delete dir="${package.dir.resolved}" />
+
+		<phingcall target="clone" />
+		<phingcall target="Clean_up" />
+		<phingcall target="create_new_deployment" />
+		
+		<echo file="${build.dir.resolved}/package/continuousphp.package" msg='{"build_id":"${package.name}","ref":"${branch}","commit":"tbd"}' />
+		<delete file="${build.dir.resolved}/${package.name}.tar.gz" />
+		<tar destfile="${build.dir.resolved}/build/${package.name}.tar.gz" compression="gzip" includeemptydirs="true">
+			<fileset dir="${package.dir.resolved}" expandsymboliclinks="true" excludes="db.local.properties">
+				<include name="**/**" />
+			</fileset>
+		</tar>
+		<phingcall target="deploy" />
+	</target>
+
+	<target name="Clean_up" description="Removes git meta information, dramatically reduce package size">
+		<echo msg="">Root calculated as ${build.dir.resolved}/package</echo>
+		<delete includeemptydirs="true">
+			<fileset dir="${build.dir.resolved}/package" defaultexcludes="false">
+				<exclude name=".git/**" />
+				<include name="**/.git/**" />
+			</fileset>
+		</delete>
+	</target>
+
+	<target name="deploy">
+		<exec command="/usr/bin/aws s3 cp --region eu-west-1 ${build.dir.resolved}/build/${package.name}.tar.gz s3://tao-jenkins-pubfiles/" passthru="true" checkreturn="true" />
+
+		<http-request url="http://deploy.taocloud.org/deploy" verbose="true" responseRegex='/"success":true/' method="POST">
+			<postparameter name="package_url" value="http://tao-jenkins-pubfiles.s3-website-us-east-1.amazonaws.com/${package.name}.tar.gz" />
+			<postparameter name="build_id" value="${package.name}" />
+		</http-request>
+
+	</target>
+
+</project>

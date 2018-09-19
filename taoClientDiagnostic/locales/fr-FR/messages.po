@@ -1,0 +1,153 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TAO 3.2.0-sprint41\n"
+"PO-Revision-Date: 2016-12-28T10:36:38\n"
+"Last-Translator: TAO Translation Team <translation@tao.lu>\n"
+"MIME-Version: 1.0\n"
+"Language: fr-FR\n"
+"sourceLanguage: en-US\n"
+"targetLanguage: fr-FR\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ../../\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+msgid "All rights reserved."
+msgstr ""
+
+msgid "Average bandwidth"
+msgstr "Bande passante moyenne"
+
+msgid "Average performances"
+msgstr "Performance moyenne (risque de lenteurs)"
+
+msgid "Average rendering time"
+msgstr "Temps de rendu moyen"
+
+msgid "Average upload speed"
+msgstr "Bande passante montante moyenne"
+
+msgid "Bandwidth"
+msgstr "Bande passante"
+
+msgid "Be aware that these tests will take up to several minutes."
+msgstr "Ces tests peuvent prendre plusieurs minutes."
+
+msgid "Begin diagnostics"
+msgstr "Démarrer le diagnostic"
+
+msgid "Checking the bandwidth..."
+msgstr "Test de bande passante..."
+
+msgid "Checking the browser..."
+msgstr "Test du navigateur..."
+
+msgid "Checking the performances..."
+msgstr "Test des performances..."
+
+msgid "Checking upload speed..."
+msgstr "Vérification de la vitesse de téléchargement..."
+
+msgid "Compatible"
+msgstr "Conforme"
+
+msgid "Connect to the diagnostic tool"
+msgstr "Accéder à l'outil de diagnostic"
+
+msgid "Details"
+msgstr "Détails"
+
+msgid "Diagnostic Tool"
+msgstr "Outil de diagnostic"
+
+msgid "Done!"
+msgstr "Terminé"
+
+msgid "Good bandwidth"
+msgstr "Bande passante correcte"
+
+msgid "Good performances"
+msgstr "Performance correcte"
+
+msgid "Good upload speed"
+msgstr "Bande passante conforme"
+
+msgid "Hide Details"
+msgstr "Masquer les détails"
+
+msgid "Log in"
+msgstr ""
+
+msgid "Login"
+msgstr ""
+
+msgid "Low bandwidth"
+msgstr "Bande passante faible"
+
+msgid "Low upload speed"
+msgstr "Bande passante non conforme"
+
+msgid "Max upload speed"
+msgstr "Bande passante montante maximale"
+
+msgid "Maximum bandwidth"
+msgstr "Bande passante maximale"
+
+msgid "Maximum rendering time"
+msgstr "Temps de rendu maximal"
+
+msgid "Minimum bandwidth"
+msgstr "Bande passante minimale"
+
+msgid "Minimum rendering time"
+msgstr "Temps de rendu minimal"
+
+msgid "Number of simultaneous test takers the connection can handle"
+msgstr "Nombre d’élèves pouvant passer l’évaluation en simultané"
+
+msgid "Operating system"
+msgstr "Système d'exploitation"
+
+msgid "Operating system and web browser"
+msgstr "Navigateur et système d’exploitation"
+
+msgid "Show Details"
+msgstr "Afficher les détails"
+
+msgid "Starting..."
+msgstr "Démarrage..."
+
+msgid "This browser is not tested."
+msgstr "Ce navigateur n'est pas testé."
+
+msgid "This tool will run a number of tests in order to establish how well your current environment is suitable to run the TAO platform."
+msgstr "Cet outil va effectuer plusieurs tests pour vérifier la configuration de vos ordinateurs utilisés pour la passation des évaluations numériques."
+
+msgid "Total"
+msgstr "Synthèse"
+
+msgid "Upload speed"
+msgstr "Bande passante montante"
+
+msgid "Very slow performances"
+msgstr "Performance faible (lenteurs très importantes)"
+
+msgid "Web browser"
+msgstr "Navigateur"
+
+msgid "Workstation performances"
+msgstr "Performance du poste de travail"
+
+msgid "You must activate JavaScript in your browser to run this application."
+msgstr "Vous devez activer JavaScript dans votre navigateur afin d'utiliser cette application."
+
+msgid "Your system is fully compliant."
+msgstr "Configuration conforme"
+
+msgid "Your system is not optimal, please contact your system administrator."
+msgstr "Configuration à risque (contactez votre plateforme académique)"
+
+msgid "Your system requires a compatibility update, please contact your system administrator."
+msgstr "Configuration nécessitant une mise en conformité (contactez votre plateforme académique)"
+

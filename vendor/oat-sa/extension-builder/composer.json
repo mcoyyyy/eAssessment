@@ -1,0 +1,18 @@
+{
+	"name" : "oat-sa/extension-builder",
+	"description" : "Tools to build QA environment of the extension",
+		"authors" : [
+		{
+			"name" : "Lionel Lecaque",
+			"role" : "Developer"
+		}
+	],
+	"homepage" : "http://www.taotesting.com",
+	"license" : "GPL-2.0",
+	"require" : {
+		"phing/phing": "2.*",
+		"pear/versioncontrol_git" : "dev-master",
+		 "pear/archive_tar": "^1.4",
+		 "pear/http_request2" : "^2.3"
+	}
+}

@@ -1,0 +1,144 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TAO 3.1.0-sprint20\n"
+"PO-Revision-Date: 2016-02-23T13:37:56\n"
+"Last-Translator: TAO Translation Team <translation@tao.lu>\n"
+"MIME-Version: 1.0\n"
+"Language: en-US\n"
+"sourceLanguage: en-US\n"
+"targetLanguage: en-US\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ../../\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+msgid "All rights reserved."
+msgstr ""
+
+msgid "Average bandwidth"
+msgstr ""
+
+msgid "Average performances"
+msgstr ""
+
+msgid "Average rendering time"
+msgstr ""
+
+msgid "Bandwidth"
+msgstr ""
+
+msgid "Be aware that these tests will take up to several minutes."
+msgstr ""
+
+msgid "Begin diagnostics"
+msgstr ""
+
+msgid "Checking the bandwidth..."
+msgstr ""
+
+msgid "Checking the browser..."
+msgstr ""
+
+msgid "Checking the performances..."
+msgstr ""
+
+msgid "Compatible"
+msgstr ""
+
+msgid "Connect to the diagnostic tool"
+msgstr ""
+
+msgid "Details"
+msgstr ""
+
+msgid "Diagnostic Tool"
+msgstr ""
+
+msgid "Done!"
+msgstr ""
+
+msgid "Good bandwidth"
+msgstr ""
+
+msgid "Good performances"
+msgstr ""
+
+msgid "Hide Details"
+msgstr ""
+
+msgid "Log in"
+msgstr ""
+
+msgid "Login"
+msgstr ""
+
+msgid "Low bandwidth"
+msgstr ""
+
+msgid "Maximum bandwidth"
+msgstr ""
+
+msgid "Maximum rendering time"
+msgstr ""
+
+msgid "Minimum bandwidth"
+msgstr ""
+
+msgid "Minimum rendering time"
+msgstr ""
+
+msgid "Number of simultaneous test takers the connection can handle"
+msgstr ""
+
+msgid "Operating system"
+msgstr ""
+
+msgid "Operating system and web browser"
+msgstr ""
+
+msgid "Show Details"
+msgstr ""
+
+msgid "Starting..."
+msgstr ""
+
+msgid "This browser is not tested."
+msgstr ""
+
+msgid "This tool will run a number of tests in order to establish how well your current environment is suitable to run the TAO platform."
+msgstr ""
+
+msgid "Total"
+msgstr ""
+
+msgid "Unknown browser"
+msgstr ""
+
+msgid "Unknown OS"
+msgstr ""
+
+msgid "Unknown version"
+msgstr ""
+
+msgid "Very slow performances"
+msgstr ""
+
+msgid "Web browser"
+msgstr ""
+
+msgid "Workstation performances"
+msgstr ""
+
+msgid "You must activate JavaScript in your browser to run this application."
+msgstr ""
+
+msgid "Your system is fully compliant."
+msgstr ""
+
+msgid "Your system is not optimal, please contact your system administrator."
+msgstr ""
+
+msgid "Your system requires a compatibility update, please contact your system administrator."
+msgstr ""
+

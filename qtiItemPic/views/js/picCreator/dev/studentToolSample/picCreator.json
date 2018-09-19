@@ -1,0 +1,39 @@
+{
+    "typeIdentifier": "studentToolSample",
+    "label": "Hint",
+    "short": "Hint",
+    "description": "show a hint",
+    "version": "0.3.0",
+    "author": "Sam Sipasseuth",
+    "email": "sam@taotesting.com",
+    "tags": [
+        "student-tool",
+        "hint"
+    ],
+    "runtime" : {
+        "hook" : "./runtime/studentToolSample.js",
+        "libraries" : [
+            "IMSGlobal/jquery_2_1_1",
+            "OAT/lodash"
+        ],
+        "stylesheets" : [
+            "./runtime/css/studentToolSample.css"
+        ],
+        "mediaFiles": [
+            "./runtime/media/tool-icon.svg"
+        ]
+    },
+    "creator" : {
+        "hook": "./picCreator.js",
+        "libraries" : [
+            "./creator/tpl/markup.tpl",
+            "./creator/tpl/propertiesForm.tpl",
+            "./creator/widget/Widget.js",
+            "./creator/widget/states/states.js",
+            "./creator/widget/states/Active.js"
+        ],
+        "stylesheets" : [
+            "./creator/css/studentToolSample.css"
+        ]
+    }
+}

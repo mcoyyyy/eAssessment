@@ -1,0 +1,167 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TAO 3.1.0-sprint33\n"
+"PO-Revision-Date: 2016-08-25T14:33:40\n"
+"Last-Translator: TAO Translation Team <translation@tao.lu>\n"
+"MIME-Version: 1.0\n"
+"Language: ja-JP\n"
+"sourceLanguage: en-US\n"
+"targetLanguage: ja-JP\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ../../\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+msgid "Add All grades"
+msgstr "すべてのグレードに追加"
+
+msgid "Add All responses"
+msgstr "すべてのレスポンスに追加"
+
+msgid "Add Test Taker"
+msgstr "受験者を追加"
+
+msgid "All collected variables"
+msgstr "すべての変数"
+
+msgid "Anonymise"
+msgstr "匿名化"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Class"
+msgstr "クラス"
+
+#, tao-public
+msgid "Delete"
+msgstr "削除"
+
+msgid "Delivery"
+msgstr "デリバリ"
+
+msgid "Download"
+msgstr "ダウンロード"
+
+msgid "Email:"
+msgstr "電子メール:"
+
+msgid "Error"
+msgstr "エラー"
+
+#, tao-public
+msgid "Export CSV"
+msgstr ""
+
+msgid "Export CSV File"
+msgstr "CSV ファイルにエクスポート"
+
+#, tao-public
+msgid "Export Table"
+msgstr "テーブルをエクスポート"
+
+msgid "Filter"
+msgstr "フィルタ"
+
+msgid "First Name:"
+msgstr "名:"
+
+msgid "First submitted variables only"
+msgstr "最初の変数のみをサブミット"
+
+msgid "Grades"
+msgstr "グレード"
+
+msgid "Label"
+msgstr "ラベル"
+
+msgid "Label:"
+msgstr "ラベル:"
+
+msgid "Last Name:"
+msgstr "姓:"
+
+msgid "Last submitted variables only"
+msgstr "最後の変数のみサブミット"
+
+msgid "Login:"
+msgstr "ログイン名:"
+
+#, tao-public
+msgid "Manage Results"
+msgstr "結果の管理"
+
+msgid "No tests have been taken yet. As soon as a test-taker will take a test his results will be displayed here."
+msgstr "テストがまだ受験されていません。テストを受験次第結果が表示されます"
+
+msgid "Ok"
+msgstr "OK"
+
+msgid "Please confirm deletion"
+msgstr "削除を確認してください"
+
+msgid "Preview"
+msgstr "プレビュー"
+
+msgid "Remove All grades"
+msgstr "すべてのグレードを削除"
+
+msgid "Remove All responses"
+msgstr "すべてのレスポンスを削除"
+
+msgid "Responses"
+msgstr "応答"
+
+msgid "Result has been deleted"
+msgstr "結果は削除されました"
+
+#, tao-public
+msgid "Results"
+msgstr "結果"
+
+#, tao-public
+msgid "Results library"
+msgstr "結果ライブラリー"
+
+msgid "Something went wrong ..."
+msgstr "何かが間違っていました..."
+
+msgid "Start Time"
+msgstr ""
+
+msgid "Test taker"
+msgstr "受験者"
+
+msgid "Test Taker"
+msgstr "受験者"
+
+msgid "Test Variables"
+msgstr "テスト変数"
+
+msgid "The class you have selected contains no results to be analysed, please select a different class"
+msgstr "選択したクラスには、分析すべき結果が含まれていません。別のクラスを選択してください。"
+
+msgid "The number of observations is too low"
+msgstr "観点の値が低すぎます"
+
+msgid "There was a problem generating your report, please try again."
+msgstr "レポート生成中に問題が発生しました。再度実行してください。"
+
+msgid "Traces"
+msgstr ""
+
+msgid "unknown"
+msgstr "不明"
+
+#, tao-public
+msgid "View and format the collected results."
+msgstr "収集された結果の表示とフォーマット。"
+
+#, tao-public
+msgid "View result"
+msgstr "結果を表示"
+
+msgid "We are preparing your report, please wait..."
+msgstr "レポート作成中、しばらくお待ちください..."
+
