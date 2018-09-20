@@ -3,7 +3,3 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-l
 RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
-
-[suhosin]
-suhosin.post.max_name_length = 128
-suhosin.request.max_varname_length = 128
